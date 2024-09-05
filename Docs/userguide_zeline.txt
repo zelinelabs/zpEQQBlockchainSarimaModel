@@ -1,0 +1,88 @@
+
+User Guide for Flask-based Supply Chain Optimization Project
+
+Introduction:
+    This guide will walk you through setting up and running the Flask-based supply chain optimization project. This project includes the following features:
+
+    Calculation of Economic Order Quantity (EOQ).
+    Integration of a blockchain to record supply chain events.
+    Forecasting future demand using the SARIMA model.
+Requirements:
+
+    Python 3.7
+    Required Python libraries: Flask, NumPy, pandas, scikit-learn, statsmodels, matplotlib
+    Run command to install : pip3 install Flask numpy pandas scikit-learn statsmodels matplotlib 
+
+Setup Instructions:
+
+        Download the Project Code:
+        Obtain the ZIP file of the project code from the source provided.
+        Extract the ZIP File:
+        Unzip the downloaded file to a location of your choice.
+        Install Required Libraries:
+        Open a terminal or command prompt.
+        Navigate to the project directory.
+        Run the following command to install required libraries:
+        Copy code
+        pip install flask numpy pandas scikit-learn statsmodels matplotlib
+        Run the Flask Application:
+        In the terminal or command prompt, ensure you are in the project directory.
+        Start the Flask application by running:
+        Copy code
+        python app.py
+        The application will start and be accessible at http://127.0.0.1:5000.
+        Access the Application:
+        Open a web browser and go to http://127.0.0.1:5000.
+        You will see the main page of the application where you can input parameters for EOQ calculation.
+        Using the Application:
+
+Input Parameters:
+        On the main page, input the following parameters:
+        Annual Demand Mean: The average annual demand for the product.
+        Demand Standard Deviation: The standard deviation of demand.
+        Setup Cost: The cost associated with placing an order.
+        Holding Cost: The cost to hold one unit of inventory for a year.
+        Service Level: Desired service level (e.g., 0.95 for 95% service level).
+        Lead Time: The time it takes to receive an order.
+        Submit the Form:
+        Click the submit button to process the data.
+        View Results:
+        The application will display the following results:
+        Calculated EOQ.
+        Blockchain details including blocks with order-related events.
+        Forecasted demand plot with EOQ-based orders.
+        Total cost of the simulated supply chain.
+
+
+
+Example Input and Output:
+
+Example Input:
+
+            Annual Demand Mean: 1000
+            Demand Standard Deviation: 50
+            Setup Cost: 200
+            Holding Cost: 10
+            Service Level: 0.95
+            Lead Time: 10
+            Example Output:
+
+            EOQ: 150 units
+            Blockchain Data:
+            Block 1: Order Placed, EOQ = 150
+            Block 2: Order Received, Quantity = 150
+            Forecasted Demand Plot: A graph showing the forecasted demand and order points.
+            Total Cost: $1,500
+            Zeline Projects Contact Information:
+
+
+
+
+
+
+Thanks for buying the project from Zeline Project Services! If you have any questions or need further assistance, please contact us:
+
+Mobile: +91 8824414850
+Website: https://zelineprojects.shop
+Instagram: @zelineprojectservices
+YouTube: Zeline Project Services

@@ -1,0 +1,8 @@
+required python version is 3.11.0
+
+step 1: unzip the project file 
+step 2: open vscode
+step 3: open the extrated file folder in the vscode
+step 4: open terminal in vscode and run: pip3 install Flask numpy pandas scikit-learn statsmodels matplotlib  ( if this command not run, then try using pip instead of pip3)
+step 5: now run the app.py
+

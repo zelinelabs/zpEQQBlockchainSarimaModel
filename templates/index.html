@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supply Chain Optimization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Supply Chain Optimization</h1>
+    <form action="{{ url_for('results') }}" method="post">
+        <label for="annual_demand_mean">Annual Demand Mean:</label>
+        <input type="number" step="0.01" id="annual_demand_mean" name="annual_demand_mean" required>
+        
+        <label for="demand_std">Demand Standard Deviation:</label>
+        <input type="number" step="0.01" id="demand_std" name="demand_std" required>
+        
+        <label for="setup_cost">Setup Cost:</label>
+        <input type="number" step="0.01" id="setup_cost" name="setup_cost" required>
+        
+        <label for="holding_cost">Holding Cost:</label>
+        <input type="number" step="0.01" id="holding_cost" name="holding_cost" required>
+        
+        <label for="service_level">Service Level:</label>
+        <input type="number" step="0.01" id="service_level" name="service_level" required>
+        
+        <label for="lead_time">Lead Time:</label>
+        <input type="number" id="lead_time" name="lead_time" required>
+        
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>

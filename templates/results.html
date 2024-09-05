@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supply Chain Optimization Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Optimization Results</h1>
+    <p><strong>Stochastic EOQ:</strong> {{ eoq }}</p>
+    <p><strong>Total Cost:</strong> {{ total_cost }}</p>
+    <h2>Blockchain Data:</h2>
+    <ul>
+        {% for block in blockchain_data %}
+        <li>Block #{{ block.index }} - Hash: {{ block.hash }} - Nonce: {{ block.nonce }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Forecasted Demand Graph:</h2>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Forecasted Demand">
+</body>
+</html>
