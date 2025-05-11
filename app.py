@@ -59,7 +59,7 @@ class Blockchain:
         block = self.mine_block(index, previous_hash, timestamp, data)
         self.chain.append(block)
 
-def train_sarima_model(data, order=(1, 1, 1), seasonal_order=(1, 1, 1, 12)):
+def train_sarima_model(data, order=(1, 0, 0), seasonal_order=(0, 0, 0, 0)):
     model = SARIMAX(data['Demand'], order=order, seasonal_order=seasonal_order)
     sarima_model = model.fit(disp=False)
     return sarima_model
