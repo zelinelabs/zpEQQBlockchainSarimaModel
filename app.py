@@ -136,5 +136,5 @@ def results():
 
     return render_template('results.html', eoq=eoq, blockchain_data=blockchain_data, total_cost=total_cost, plot_url=plot_url)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
